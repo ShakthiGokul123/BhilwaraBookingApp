@@ -1,14 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+  <mat-grid-list (click)="onLogin()"cols="1" rowHeight="1:1">
+  <mat-grid-tile><ion-slides pager="true" [options]="slideOpts" #mySlider (ionSlidesDidLoad)="slideDidLoad(mySlider)" autoplay="1000" loop="true" speed="3000" >
+    <ion-slide>
+      <ion-img src="/assets/icici.png"></ion-img>
+    </ion-slide>
+    <ion-slide>
+        <ion-img src="/assets/paytm.png"></ion-img>
+    </ion-slide>
+     
+    <ion-slide>
+        <ion-img src="/assets/offer.png"></ion-img>
+    </ion-slide>
+  </ion-slides>
+</mat-grid-tile><br>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+  <mat-grid-tile>
+    <ion-img  src="/assets/petta.png"></ion-img>
+  </mat-grid-tile>
+</mat-grid-list>
+
